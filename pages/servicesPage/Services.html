@@ -38,17 +38,17 @@
 <section class="main__section page__main">
     <div class="container main-section__container">
         <div class="wrap-send-form">
-            <form action="" method="post" class="send-form">
+            <form action="" method="post" id="formMail" class="send-form">
                 <div class="form__group field">
-                    <input type="input" class="form__field" placeholder="E-mail" name="name" id='email' required />
+                    <input type="input" class="form__field" placeholder="E-mail" name="email" id='email' required />
                     <label for="email" class="form__label">E-mail</label>
                 </div>
                 <div class="message-form">
                     <label class="ta-message" for="message">Send your message:</label>
-                    <textarea class="ta-send" maxlength="300" placeholder="Your message..." name="ta" id="message" cols="70" rows="4"></textarea>
+                    <textarea class="ta-send" maxlength="300" placeholder="Your message..." name="text" id="message" cols="70" rows="4"></textarea>
                 </div>
                 <div class="button-form">
-                    <button  title="Button slide blue/green" class="button btnSlide btnBlueGreen">
+                    <button id="clickForm" type="button" title="Button slide blue/green" class="button btnSlide btnBlueGreen">
                         <span class="top" data-content="Slide">Send</span>
                         <span class="bottom" data-content="Slide">Message</span>
                     </button>
@@ -57,5 +57,27 @@
         </div>
     </div>
 </section>
+<script>
+    document.getElementById('clickForm').addEventListener('click', () => {
+        const form = document.getElementById('formMail');
+
+        const email = form.email.value;
+        const text = form.text.value;
+
+        $.ajax({
+            type: 'POST',
+            url: 'http://viva.zzz.com.ua/api/pronks',
+            data: JSON.stringify({
+                email: email,
+                text: text,
+            }),
+            success: function(data) {
+                alert('Sent');
+            },
+            contentType: "application/json",
+            dataType: 'json',
+        });
+    })
+</script>
 </body>
 </html>
