@@ -1,0 +1,155 @@
+
+.wrap-send-form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.send-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form-email-item {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.ta-message {
+    margin-bottom: 20px;
+    border: 0;
+    font-size: 1.3rem;
+    color: #11998e;
+}
+
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 50%;
+}
+
+.form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #11998e;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    caret-color: #11998e;
+}
+
+.form__field::placeholder {
+    color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+}
+
+.ta-send {
+    border: none;
+    border-bottom: 2px solid #9b9b9b;
+    background: none;
+    outline: none;
+    caret-color: #11998e;
+    resize: none;
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #9b9b9b;
+}
+
+.form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #11998e, #38ef7d);
+    border-image-slice: 1;
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #11998e;
+    font-weight: 700;
+}
+
+button.button {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    float: left;
+    outline: none;
+    width: 120px;
+    padding: 0;
+    margin: 10px 20px 10px 0;
+    font-weight: 600;
+    text-align: center;
+    line-height: 50px;
+    color: #FFF;
+    border-radius: 5px;
+    transition: all 0.2s ;
+}
+
+.btnSlide.btnBlueGreen {
+    background: 0;
+}
+
+.btnSlide .top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 50px;
+    background: #00AE68;
+    z-index: 10;
+    transition: all 0.2s ;
+    border-radius: 5px;
+}
+
+.btnSlide.btnBlueGreen .top {
+    background: #00AE68;
+}
+
+.btnSlide .bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 50px;
+    color: #000;
+    z-index: 5;
+    border-radius: 5px;
+}
+
+.btnSlide:hover .top {
+    top: 40px;
+}
+

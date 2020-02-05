@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pronks-service</title>
+    <link rel="stylesheet" href="../../stylesheet/index.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body class="page">
+<div class="wrap-header-items">
+    <div class="logo">
+        <h1 class="logo-item"><a class="logo-link" href="#">Pronks</a></h1>
+    </div>
+    <ul class="content-list">
+        <li class="list"><img class="item-img" src="../../img/our-viber.png" alt="viber"><a class="list"
+                                                                                            href="tel:+48729393826">+&nbsp;48&nbsp;729393826</a>
+        </li>
+        <li class="list"><img class="item-img" src="../../img/gmail.png" alt="gmail">pronkpronk72@gmail.com</li>
+        <li class="list"><img class="item-img" src="../../img/skype.png" alt="skype">pronkswork</li>
+    </ul>
+</div>
+<header class="page__header header">
+    <div class="container header__container">
+        <nav class="header__nav">
+            <ul class="nav__menu">
+                <li class="menu__list list"><a class="menu__link" href="../../index.html">Home</a></li>
+                <li class="menu__list list"><a class="active" href="#">Write us</a>
+                </li>
+                <li class="menu__list list"><a class="menu__link" href="../../pages/aboutPage/about.html">About</a></li>
+                <li class="menu__list list"><a class="menu__link"
+                                               href="../../pages/contactPage/contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section class="main__section page__main">
+    <div class="container main-section__container">
+        <div class="wrap-send-form">
+            <form action="" method="post" class="send-form">
+                <div class="form__group field">
+                    <input type="input" class="form__field" placeholder="E-mail" name="name" id='email' required />
+                    <label for="email" class="form__label">E-mail</label>
+                </div>
+                <div class="message-form">
+                    <label class="ta-message" for="message">Send your message:</label>
+                    <textarea class="ta-send" maxlength="300" placeholder="Your message..." name="ta" id="message" cols="70" rows="4"></textarea>
+                </div>
+                <div class="button-form">
+                    <button  title="Button slide blue/green" class="button btnSlide btnBlueGreen">
+                        <span class="top" data-content="Slide">Send</span>
+                        <span class="bottom" data-content="Slide">Message</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+</body>
+</html>

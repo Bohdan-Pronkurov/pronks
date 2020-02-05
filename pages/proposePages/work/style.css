@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.c-work {
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0,0,0, .5)), url("../../../img/work.jpg")no-repeat, center;
+    height: 95vh;
+    width: 100%;
+    margin: 0;
+    padding: 5vh 0 0 0;
+}
+
+.c-work__container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.c-work__back-button {
+    color: #ffffff;
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.c-work__back-arrow {
+    transition: all .5s;
+    position: absolute;
+    left: 0;
+}
+
+.c-work__back-button:hover .c-work__back-arrow {
+    left: -5px;
+}
+
+.c-work__wrap-vacancies {
+    margin-top: 5vh;
+}
+
+.vacancies-list {
+    list-style: none;
+    width: max-content;
+}
+
+.vacancies {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    background: rgba(66, 66, 66, 0.73);
+    flex-wrap: wrap;
+}
+
+.vacancies-name {
+    margin-left: 10px;
+    color: #f1f1f1;
+}
+
+.tag-work {
+    padding: 0;
+    border-bottom: 1px solid #11998e;
+    width: max-content;
+    margin-left: 10px;
+}
+
+.info-work {
+    list-style: circle;
+}
+
+.wrap-info-vacancies {
+    color: #f1f1f1;
+}
+
+.write-us {
+    text-decoration: none;
+    background: purple;
+    color: #ffffff;
+    padding: 10px 10px;
+    margin: 2vh auto;
+    text-align: center;
+    transition: all .5s;
+}
+
+.write-us:hover {
+    box-shadow: 3px 3px 20px 4px #000;
+}
