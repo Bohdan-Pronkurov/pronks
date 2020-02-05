@@ -7,8 +7,9 @@
 .page {
     width: 100%;
     background: linear-gradient(90deg, rgba(0, 0, 0, .65) 50%, rgba(0, 0, 1, .4) 100%), url("../img/Poland_Houses_Sky_508076_1920x1080.jpg"), center;
-    background-size: 100%;
+    background-size: cover;
     background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .container {
