@@ -6,7 +6,7 @@
 
 .page {
     width: 100%;
-    background: linear-gradient(90deg, rgba(0, 0, 0, .65) 50%, rgba(0, 0, 1, .4) 100%), url("../img/Poland_Houses_Sky_508076_1920x1080.jpg"), center;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .65) 50%, rgba(0, 0, 1, .4) 100%), url("/img/Poland_Houses_Sky_508076_1920x1080.jpg"), center;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -153,7 +153,7 @@
     position: relative;
     width: 400px;
     height: 220px;
-    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0,0,0, .5)), url("../img/work.jpg")no-repeat, center;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0,0,0, .5)), url("/img/work.jpg")no-repeat, center;
     background-size:100%;
     overflow: hidden;
     z-index: 1;
@@ -163,7 +163,7 @@
     position: relative;
     width: 400px;
     height: 220px;
-    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0,0,0, .5)), url("../img/students.jpeg")no-repeat, center;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0,0,0, .5)), url("/img/students.jpeg")no-repeat, center;
     background-size:100%;
     overflow: hidden;
     transition: all 3s;
@@ -174,7 +174,7 @@
     position: relative;
     width: 400px;
     height: 220px;
-    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0,0,0, .5)), url("../img/autoria.jpeg")no-repeat, center;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0,0,0, .5)), url("/img/autoria.jpeg")no-repeat, center;
     background-size:100%;
     overflow: hidden;
     z-index: 1;
@@ -185,7 +185,7 @@
     position: relative;
     width: 400px;
     height: 220px;
-    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0,0,0, .5)), url("../img/visa.jpg")no-repeat, center;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0,0,0, .5)), url("/img/visa.jpg")no-repeat, center;
     background-size:100%;
     overflow: hidden;
     z-index: 1;
